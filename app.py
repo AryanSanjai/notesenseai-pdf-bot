@@ -139,18 +139,18 @@ if uploaded_file:
                 # Highlight summary requests
                 if is_summary_request(question):
                     st.markdown("""
-                    <div style='background-color:#ffe9b0; padding:16px; border-radius:10px; margin-bottom:10px;'>
+                    <div style='background-color:#ffe9b0; color:#222; padding:16px; border-radius:10px; margin-bottom:10px;'>
                         <b>Summary of the PDF:</b><br>
                         {}</div>
                     """.format(answer), unsafe_allow_html=True)
                 else:
                     st.markdown("""
-                    <div style='background-color:#eaf4ff; padding:16px; border-radius:10px; margin-bottom:10px;'>
+                    <div style='background-color:#eaf4ff; color:#222; padding:16px; border-radius:10px; margin-bottom:10px;'>
                         <b>Answer:</b><br>
                         {}</div>
                     """.format(answer), unsafe_allow_html=True)
                 st.markdown("""
-                <div style='background-color:#f9f9f9; padding:12px; border-radius:8px;'>
+                <div style='background-color:#f9f9f9; color:#222; padding:12px; border-radius:8px;'>
                     <b>Relevant PDF Section(s):</b><br>
                     {}</div>
                 """.format(context), unsafe_allow_html=True)

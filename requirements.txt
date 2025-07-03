@@ -1,0 +1,4 @@
+streamlit
+pymupdf
+requests
+ibm-watson-machine-learning
